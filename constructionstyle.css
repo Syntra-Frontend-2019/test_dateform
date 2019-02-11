@@ -1,0 +1,31 @@
+
+body {
+    background-color: dimgray;
+}
+#container {
+    width: 1200px;
+    height: auto;
+    margin:  0px auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid green;
+    justify-content: center;
+    align-items: center;
+}
+.headtext {
+    text-align: center;
+    padding: 15px;
+    font-size: 25px;
+    color: maroon;
+}
+
+.img1 {
+    flex: 1;
+    padding: 20px;
+   
+}
+.img2 {
+    flex:1;
+    padding: 20px;
+
+}

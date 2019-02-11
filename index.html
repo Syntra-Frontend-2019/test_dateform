@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="date.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="date.js"></script>
+
+</head>
+<body>
+   
+   <div id="main_container">
+    <div id="header_container">
+        <h1 id="headertext">FrontEndDev.match</h1> 
+         <em id="fds"> <button type="button" class="login" onclick="login()">Login</button>
+            <button type="button" class="login" onclick="signUp()">Sign Up</button></em>
+         
+         
+         <div id="social">
+             <ul>
+                 <li class="fb"><i class="fab fa-facebook-square"> <a href="http://www.facebook.com">Facebook</a></i></li>
+                 <li class="tw"><i class="fab fa-twitter-square"> <a href="http://www.twitter.com">Twitter</a></i></li>
+                 <li class="ig"><i class="fab fa-instagram"> <a href="http://www.instagram.com">Instagram</a></i></li>
+             </ul>
+         </div>
+    
+        <div id="headernav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="under_construction.html">About</a></li>
+                <li><a href="under_construction.html">Stories</a></li>
+                <li><a href="under_construction.html">Contact</a>
+                    <ul>
+                        <li><a href="#">Call us</a></li>
+                       <li><a href="#">Email us</a></li>
+                       <li><a href="#">Live chat</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="form_container">
+        
+        <form action="inputfields"> 
+           <div class="box">
+               
+         <div class="name">
+             <div class="pair">Name  <span>*</span></div>
+                  <div class="pair">
+                    <input type="text" name="fname" id="fname"><br/>
+                    <label for="fname">First name</label>
+                </div>
+                <div class="pair">
+                    <input type="text" name="lname" id="lname"><br/>
+                    <label for="lname">Last name</label>
+                </div>
+            </div>
+            </div>
+        
+            <div class="box">
+               Birth date   <span>*</span>   
+                           <label for="dob"></label>
+                           <select name="dob" id="dob">
+                         <option value="1">1</option>
+                         <option value="2">2</option>
+                         <option value="3">3</option>
+                         <option value="4">4</option>
+                         <option value="5">5</option>
+                         <option value="6">6</option>
+                         <option value="7">7</option>
+                         <option value="8">8</option>
+                         <option value="9">9</option>
+                         <option value="10">10</option>
+                         <option value="11">11</option>
+                         <option value="12">12</option>
+                         <option value="13">13</option>
+                         <option value="14">14</option>
+                         <option value="15">15</option>
+                         <option value="16">16</option>
+                         <option value="17">17</option>
+                         <option value="18">18</option>
+                         <option value="19">19</option>
+                         <option value="20">20</option>
+                         <option value="21">21</option>
+                         <option value="22">22</option>
+                         <option value="23">23</option>
+                         <option value="24">24</option>
+                         <option value="25">25</option>
+                         <option value="26">26</option>
+                         <option value="27">27</option>
+                         <option value="28">28</option>
+                         <option value="29">29</option>
+                         <option value="30">30</option>
+                         <option value="31">31</option> 
+                           </select>
+                     
+                            <label for="start"></label>
+                            <input type="month" id="start" name="start"
+                            min="1970-01" value="1970-01">
+
+             </div>
+
+            <div class="box">
+                Gender <span>*</span>
+                          <label for="gendermale"></label>
+                          <input type="radio" value="Male" id="gendermale">Male
+                          <input type="radio" value="female" >Female
+            </div>
+
+            <div class="box">
+                 Marital status  <span>*</span>  
+                           <label for="status"></label>
+                           <input type="radio" name="single" value="single" id="status" checked>single
+                           <input type="radio" name="divorced" value="divorced" >divorced
+                           <input type="radio" value="widowed" >complicated
+            </div>
+
+            <div class="box">
+               
+                 Occupation   <span>*</span>       
+                           <label for="occupation"></label>
+                           <input type="text" name="occupation" id="occupation" placeholder="specify your field">
+                        
+            </div>
+
+            <div class="box">
+                 E-mail   <span>*</span>        
+                           <label for="emailbox"></label>
+                           <input type="email" placeholder="ex. myname@example.com" id="emailbox" >
+            </div>
+
+            <div class="box">
+                  Phone number   <span>*</span>   
+                  
+                            <label for="telephone"></label>
+                        
+                            <input type="text" id="telephone" placeholder="ex +320499999999" pattern="/^((\+|00)32\s?|0)4(60|[789]\d)(\s?\d{2}){3}$/">
+             </div>
+
+             <div class="box">
+                 State you live in   <span>*</span>   
+                            <label for="state"></label>
+                            <input type="text" id="state">
+             </div>
+
+             <div class="box">
+                 How would you like your match to contact you  *  
+        
+                             
+                                <label for="contact"></label>
+                            <input type="radio" value="phone" id="contact" >telephone
+                            <input type="radio" value="email">email 
+                            <input type="radio" value="both" >both
+                        
+             </div>
+
+             <div class="box">
+                  Recent photo  <span>*</span>    
+                            <label for="photo"></label>
+                            <button onclick="getpic()" id="photo">Upload File</button> 
+             </div>
+
+             <div class="box">
+                  Give a brief description of yourself <br><br>
+             
+                          <textarea name="textfield" id="description" cols="30" rows="10"></textarea>
+                          <input type="submit">
+             </div>
+
+       </form>
+       </div>
+
+</div>
+</body>
+</html>
